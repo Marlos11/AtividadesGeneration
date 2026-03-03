@@ -1,3 +1,11 @@
+
+/* 
+  Com base na tabela abaixo, escreva um algoritmo que leia o código de um item (número inteiro entre 1 e 6) e a quantidade comprada deste item (número inteiro). A seguir, mostre na tela o valor total da conta e o nome do produto que foi comprado.
+
+
+
+*/
+
 const leitura = require('readline-sync')
 
 let codigoProduto
@@ -27,22 +35,22 @@ quantidade = leitura.questionInt("Digite a quantidade desejada ")
 
 switch (codigoProduto) {
   case 1:
-    console.log(`Produto: Cachorro quente, valor total da sua compra R$ ${quantidade * cachorroQuente}`)
+    console.log(`Produto: Cachorro quente, valor total da sua compra R$ ${quantidade * 10}`)
     break;
   case 2:
-    console.log(`Produto: X-Salada, valor total da sua compra R$ ${quantidade * xSalada}`)
+    console.log(`Produto: X-Salada, valor total da sua compra R$ ${quantidade * 15}`)
     break;
   case 3:
-    console.log(`Produto: X-Bacon, valor total da sua compra R$ ${quantidade * xBacon}`)
+    console.log(`Produto: X-Bacon, valor total da sua compra R$ ${quantidade * 18}`)
     break;
   case 4:
-    console.log(`Produto: Bauru, valor total da sua compra R$ ${quantidade * bauru}`)
+    console.log(`Produto: Bauru, valor total da sua compra R$ ${quantidade * 12}`)
     break;
   case 5:
-    console.log(`Produto: Refrigerante, valor total da sua compra R$ ${quantidade * refrigerante}`)
+    console.log(`Produto: Refrigerante, valor total da sua compra R$ ${quantidade * 8}`)
     break;
   case 6:
-    console.log(`Produto: Suco de laranja, valor total da sua compra R$ ${quantidade * sucoDeLaranja}`)
+    console.log(`Produto: Suco de laranja, valor total da sua compra R$ ${quantidade * 13}`)
     break;
 
   default:
