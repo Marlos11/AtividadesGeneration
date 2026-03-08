@@ -29,7 +29,10 @@ do {
       break
     case 0:
       continuar = false
+      console.log("Programa Finalizado!")
       break
+    default:
+      console.log("Opcão invalida")
   }
 
 } while (continuar);
